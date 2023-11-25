@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
     <div>
         首页
     </div>
@@ -16,4 +16,4 @@ export default {
         
     }
 }
-</script>
+</script> -->
