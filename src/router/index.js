@@ -1,21 +1,21 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Index from '../views/index.vue'
+// import Vue from 'vue'
+// import VueRouter from 'vue-router'
 
-Vue.use(Vuex)
 
-const routes = [
-  {
-    path: '/',
-    name: 'home',
-    component: Index
-  },
-]
+// Vue.use(Vuex)
 
-const router = new VueRouter({
-  mode: 'history',
-  base: process.env.BASE_URL,
-  routes
-})
+// const routes = [
+//   {
+//     path: '/insex',
+//     name: 'insex',
+//     component:index
+//   },
+// ]
 
-export default router
+// const router = new VueRouter({
+//   mode: 'history',
+//   base: process.env.BASE_URL,
+//   routes
+// })
+
+// export default router
