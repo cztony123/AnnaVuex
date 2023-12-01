@@ -1,11 +1,13 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import Counter from '../store/moduls/counter'
+import Cart from '../store/moduls/cart'
 
 Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    total:3,
+    total:8,
     users:[
       {name:"马云",age:20},
       {name:"马化腾",age:28},
@@ -15,13 +17,13 @@ export default new Vuex.Store({
   },
   mutations: {
     changeTotal(state,payload){
-      console.log(state,payload)
+      // console.log(state,payload) 
       state.total = payload.count
     }
   },
   actions: {
     asyncChangeTotal(conText,payload){
-      console.log(conText,payload)
+      // console.log(conText,payload)
       conText.commit('changeTotal',payload)
     }
   },
@@ -34,5 +36,7 @@ export default new Vuex.Store({
     }
   },
   modules: {
+    counter:Counter,
+    cart:Cart
   }
 })
