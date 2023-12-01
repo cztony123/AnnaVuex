@@ -26,10 +26,10 @@ export default {
                 alert('请输入密码')
                 return;
             }
-            this.$request(process.env.VUE_APP_API+"/home/user/pwdlogin?token=1ec949a15fb709370f","post",{cellphone:this.username,password:this.password}).then(res=>{
-                    console.log(res);
+            // this.$request(process.env.VUE_APP_API+"/home/user/pwdlogin?token=1ec949a15fb709370f","post",{cellphone:this.username,password:this.password}).then(res=>{
+            //         console.log(res);
                     
-                });
+            //     });
             }
         }
     }
